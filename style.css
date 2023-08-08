@@ -1,0 +1,220 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/*Hızlı menü*/
+.oshortcut-buttons.list .oshortcut-button { 
+    margin-bottom: 10px;
+     padding-left: 5px; 
+     padding-right: 5px; }
+.oshortcut-buttons ul { 
+    margin-left: -5px;
+     margin-right: -5px;
+     list-style: none; }
+.oshortcut-button a {
+    height: 200px;
+    background: rgba(23, 255, 0, 0.4);
+    display: block;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column; 
+    color: #1b4b62; 
+     transition: .3s;
+    border-radius: 10px;
+    text-decoration: none;     
+         }
+.oshortcut-button a:hover { 
+    background: #17ff00;
+    color: #fff; 
+}
+.oshortcut-button .icon { 
+    font-size: 24px; 
+    margin-bottom: 10px;
+ }
+
+.oshortcut-button .text {
+     font-size: 14px; 
+    line-height: 1.3;
+     font-weight: 500; 
+    }
+
+    
+/*tesis v.s */
+.obb-tab__nav { 
+    background-image: url('img/anakent.jpg');
+    background-repeat: no-repeat; 
+    background-position: center left; 
+    background-size: cover;
+    width: 100%;
+    height: 600px; }
+@media (min-width: 1824px) { .obb-tab__nav { height: 582px; } }
+
+@media (max-width: 767px) { .obb-tab__nav { height: auto; } }
+
+.obb-tab__nav ul { 
+    background: rgba(58, 105, 26, 0.9); 
+    height: 100%; 
+    position: relative; 
+    z-index: 1; 
+    list-style: none;
+} 
+@media (max-width: 767px) { .obb-tab__nav ul { display: flex; flex-wrap: wrap; } }
+.obb-tab__nav ul:before { content: ""; 
+position: absolute; top: 0; right: 0; bottom: 0; left: 100px; 
+z-index: -1; 
+background: linear-gradient(to left, rgba(19, 45, 57, 0.8), transparent); }
+@media (max-width: 767px) { .obb-tab__nav ul li { max-width: 25%; flex: 0 0 25%; } }
+.obb-tab__nav ul li a {
+     
+    display: flex;  
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: right;
+    height: 100px; 
+    border-bottom: 1px solid #143a4b;
+    padding-left: 20px; 
+    padding-right: 20px;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+     }
+@media (max-width: 767px) { .obb-tab__nav ul li a { text-align: center; align-items: center; padding-left: 5px; padding-right: 5px; border-bottom: none; border-right: 1px solid #143a4b; } }
+.obb-tab__nav ul li a:before {
+    content: ""; 
+    position: absolute; 
+    top: -1px; right: 0; bottom: -1px; left: 0; 
+    background: linear-gradient(to left, #c4a0ad, transparent); 
+    z-index: -1; 
+    opacity: 0; 
+    visibility: hidden;
+    -webkit-transition: .3s; 
+    transition: .3s; }
+.obb-tab__nav ul li a .icon { 
+    font-size: 18px; 
+    margin-bottom: 5px; }
+.obb-tab__nav ul li a .title { 
+    font-size: 16px; 
+    font-weight: 800; 
+    line-height: 1.4;
+ }
+ @media (max-width: 767px) { .obb-tab__nav ul li a .title { font-size: 14px; font-weight: 600; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; width: 100%; } }
+ .obb-tab__nav ul li a .text { font-size: 13px; }
+ /*alt caruosel*/
+
+ .obb-col .carousel-item img{
+    height: 580px;
+ }
+
+ /*büyük buttonlar*/
+
+ @media (min-width: 1824px) { .obb-buttons.large .obb-cover { height: 191px; }
+  }
+  .row ul {
+    list-style: none;
+  }
+.obb-buttons.large .obb-body .text { 
+    font-size: 20px;
+    
+ }
+.obb-button.style-1 .obb-cover {
+    height: 200px;
+     }
+.obb-button.style-1 .obb-cover img { 
+    object-position: center -30px; 
+    }
+
+@media (max-width: 479px) { .obb-button.style-1 .obb-cover img {  object-position: center center; } }
+.obb-button.style-1 .obb-body {
+    padding: 30px 25px; 
+    align-items: flex-start; 
+    justify-content: flex-end; 
+    text-align: left; }
+    
+.obb-button.style-1 .obb-body .text { font-size: 36px;
+     font-weight: 200; 
+     line-height: 1.1; 
+    }
+    .obb-button.style-1 .obb-body .text span { 
+        font-weight: 800; 
+    }
+@media (max-width: 479px) { .obb-button:not(.style-1) {  flex: 0 0 50%; max-width: 50%; } }
+.obb-button:nth-child(2) .obb-body { background: rgba(255, 190, 38, 0.9); }
+
+.obb-button:nth-child(3) .obb-body { background: rgba(71, 165, 255, 0.9); }
+
+.obb-button:nth-child(4) .obb-body { background: rgba(93, 164, 156, 0.9); }
+
+.obb-button:nth-child(5) .obb-body { background: rgba(255, 103, 43, 0.9); }
+
+.obb-button:nth-child(6) .obb-body { background: rgba(68, 74, 198, 0.9); }
+
+.obb-button:nth-child(7) .obb-body { background: rgba(255, 89, 160, 0.75);}
+
+.obb-button a { 
+    display: block; 
+    position: relative; }
+.obb-button a:hover .obb-cover img { transform: scale3d(1.2, 1.2, 1.2); }
+.obb-cover { height: 150px;
+    overflow: hidden;
+ }
+.obb-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1.5s cubic-bezier(0, 0, 0.2, 1);
+    }
+.obb-body {
+    position: absolute;
+    left: 0; right: 0; top: 0; bottom: 0; 
+    background: rgba(93, 175, 73, 0.9); 
+    display: flex; 
+    flex-wrap: wrap; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+     text-align: center; 
+     color: #fff; 
+    }
+.obb-body .icon { font-size: 42px; margin-bottom: 10px; }
+.obb-body .text { font-weight: 300; line-height: 1.4; font-size: 16px; }
+.obb-body .text span { font-weight: 700; }
+
+
+
+
+
+/* owl carousel  ok simgeleri için*/
+.owl-nav .owl-next{
+    position: absolute;
+    top: 0;
+    right:0;
+    color: #fff !important;
+    font-size: 200px !important;
+    z-index: 1;
+}
+.owl-nav .owl-prev{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff !important;
+    font-size: 200px !important;
+    z-index: 1;
+}
+
+.my-slide{
+    z-index: 2;
+    
+}
+.my-slide a{
+    margin-left: 215px;
+
+}
+
+
+   
